@@ -12,14 +12,21 @@ int main()
     if (!array) return (0);
     for (int j = 0; j < 10; j++ ) array[j] = 0;
 
-    while (true) {
+    signal(SIGINT, handleSignint);
+
+    while (1) {
         int i = 0;
         int maximum_people=10;
         while (maximum_people) {
+            int item = 0;
             printf("Please enter your floor number \n:");
-            scanf("%d", array + i);
-            maximum_people--;
-            i++;  
+            scanf("%d", &item);
+            else if (item < 2 || item > 8) printf("Please enter a value between 2 - 8\n");
+            else {
+                array[i] = item;
+                maximum_people--;
+                i++; 
+            } 
         }
         moveElevator(array);
     }

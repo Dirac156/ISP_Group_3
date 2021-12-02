@@ -8,13 +8,12 @@
  **/
 
 void removeItem(int *arr, int floor) {
-    int remaining = 0;
+    int left = 0;
     for (int i = 0; i < 10; i++) {
         if (arr[i] == floor) {
-            arr[i] = 0
-        } else {
-            remaining++;
-        };
+            arr[i] = 0;
+            left++;
+        }
     }
-    printf(">>> Number of people remaining: %d\n", remaining);
+    printf(">>> Number of people left: %d\n", left);
 }   

@@ -7,9 +7,11 @@
  **/
 
 int isEmpty(int *arr) {
-    for (int i = 0; i < 10; ) {
+    for (int i = 0; i < 10; i++) {
         // condition ? true : false
-        arr[i] != 0 ? return (1) : i++;   
+        if ( arr[i] != 0) {
+            return (1);
+        } 
     }
     return (0);
 };
