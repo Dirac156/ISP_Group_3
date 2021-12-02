@@ -1,7 +1,7 @@
 #include "header.h"
 
 /**
- * isEmpty: check if the array as no element 
+ * isEmpty: check if the array doesn't have any element 
  * @arr: list of floors.
  * @return int 0  when the array is empty and 1 when the array is not empty. 
  **/

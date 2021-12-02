@@ -6,6 +6,7 @@
  **/
 
 void moveElevator(int *arr) {
+    // program start
     printf(">>>> Start <<<<\n");
     int position = 1;
     if (!arr) {
@@ -27,5 +28,6 @@ void moveElevator(int *arr) {
         }
     }
 
+    // program ends
     printf(">>>> End <<<<\n\n");
 }
