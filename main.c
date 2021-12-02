@@ -21,7 +21,10 @@ int main()
             int item = 0;
             printf("Please enter your floor number \n:");
             scanf("%d", &item);
-            else if (item < 2 || item > 8) printf("Please enter a value between 2 - 8\n");
+            if (item < 2 || item > 8) {
+                printf("Error: Entered an invalid value\n");
+                return (0);
+            }
             else {
                 array[i] = item;
                 maximum_people--;
