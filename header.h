@@ -10,6 +10,11 @@
 #include <unistd.h>
 #endif
 
+// include files
+#include "isEmpty.c"
+#include "moveElevator.c"
+#include "removeItem.c"
+
 int isEmpty(int *arr);
 int removeItem(int *arr, int floor);
 int moveElevator(int *arr);
